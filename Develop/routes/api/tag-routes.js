@@ -31,7 +31,13 @@ router.get('/:id', (req, res) => {
       as: 'tag_products'
     }] 
   })
-  .then(dbUserData => res.json(dbUserData))
+  .then(dbUserData => {
+    if(!dbUserData) {
+      res.status(404).json({ message: 'No tag was found.'});
+      return;
+    }
+    res.json(dbUserData);
+  })
   .catch(err => {
     console.log(err);
     res.status(500).json(err);
