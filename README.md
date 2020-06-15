@@ -21,7 +21,7 @@ Afer cloning the repo, run 'npm install mysql2 sequelize express' in the termina
 ## Usage
 To use, go to the db folder in terminal. From there enter 'mysql -u root -p' and enter the password that can be found in the file .env. After that enter 'source schema.sql' then 'quit'. After that, move to the Develop folder in terminal and enter 'npm run seed' after that enter 'npm start' to start the server.
 
-Here is a link to a demo video! [Demo](https://www.youtube.com/watch?v=DfrV4RvUZmY&feature=youtu.be)
+Here is a link to a demo video! [Demo](https://youtu.be/DfrV4RvUZmY)
 ## Credits
 
 ## License
